@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dtspvr1tltmtf"]
+
+[ext_resource type="PackedScene" uid="uid://c6by1a6ybb28d" path="res://Assets/Prefabs/Player/player.tscn" id="1_cb4fr"]
+[ext_resource type="Texture2D" uid="uid://b17fovymvlj5s" path="res://Assets/Sprites/Test/icon.svg" id="2_6f8ol"]
+[ext_resource type="PackedScene" uid="uid://78hd55byo6ds" path="res://Assets/Prefabs/Items/Pickup Test 2.0.tscn" id="3_uau5s"]
+
+[node name="TestLevel" type="Node2D"]
+
+[node name="Pickup Test 2_0" parent="." instance=ExtResource("3_uau5s")]
+position = Vector2(992, 528)
+
+[node name="Player" parent="." instance=ExtResource("1_cb4fr")]
+position = Vector2(41, 42)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0, 1, 0.352941, 1)
+position = Vector2(274, 131)
+texture = ExtResource("2_6f8ol")

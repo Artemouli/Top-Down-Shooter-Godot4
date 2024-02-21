@@ -1,0 +1,35 @@
+[gd_scene load_steps=6 format=3 uid="uid://dysx1pmmetln"]
+
+[ext_resource type="Texture2D" uid="uid://b34wbx7cawlk2" path="res://Assets/Sprites/Test/301-3013157_coin-golden-goldcoin-s-dollar-pixel-pixels-1184105542.png" id="1_asgj2"]
+[ext_resource type="Script" path="res://Assets/Prefabs/Items/ItemMetalPickup.gd" id="1_sy2b3"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_l55nn"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8wx6f"]
+radius = 230.367
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_3pd45"]
+size = Vector2(52, 56)
+
+[node name="Pickup Test" type="StaticBody2D"]
+collision_layer = 4
+physics_material_override = SubResource("PhysicsMaterial_l55nn")
+script = ExtResource("1_sy2b3")
+metalAmount = 10
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.06, 0.06)
+texture = ExtResource("1_asgj2")
+
+[node name="Collection Area" type="Area2D" parent="."]
+collision_layer = 4
+monitorable = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Collection Area"]
+shape = SubResource("CircleShape2D_8wx6f")
+debug_color = Color(0.54902, 0.564706, 0, 0.419608)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_3pd45")
+
+[connection signal="body_entered" from="Collection Area" to="." method="_on_collection_area_body_entered"]

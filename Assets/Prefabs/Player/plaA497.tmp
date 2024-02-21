@@ -1,0 +1,50 @@
+[gd_scene load_steps=9 format=3 uid="uid://c6by1a6ybb28d"]
+
+[ext_resource type="Script" path="res://Assets/Prefabs/Player/Player Scripts/player.gd" id="1_hhgbj"]
+[ext_resource type="Texture2D" uid="uid://b17fovymvlj5s" path="res://Assets/Sprites/Test/icon.svg" id="1_oyp5x"]
+[ext_resource type="Script" path="res://Assets/Prefabs/Player/CursorFollow.gd" id="2_2kufv"]
+[ext_resource type="Script" path="res://Assets/Prefabs/Player/Player Scripts/PlayerInventory.gd" id="3_v4nx1"]
+[ext_resource type="PackedScene" uid="uid://d00afbov5itmp" path="res://Assets/Components/hitbox/hitbox_component.tscn" id="4_tx1go"]
+[ext_resource type="Texture2D" uid="uid://dp0tm5bwdyqna" path="res://Assets/Sprites/Test/shotgun.png" id="5_7o5bq"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_v42sk"]
+size = Vector2(99, 100)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_oyr67"]
+size = Vector2(100, 97)
+
+[node name="Player" type="CharacterBody2D"]
+collision_mask = 2
+motion_mode = 1
+script = ExtResource("1_hhgbj")
+
+[node name="Player Collision" type="CollisionShape2D" parent="."]
+position = Vector2(-1.5, -2)
+shape = SubResource("RectangleShape2D_v42sk")
+
+[node name="Left Arm Pos" type="Node2D" parent="."]
+position = Vector2(-85, 0)
+
+[node name="Right Arm Pos" type="Node2D" parent="."]
+position = Vector2(85, 0)
+
+[node name="test player" type="Sprite2D" parent="."]
+texture = ExtResource("1_oyp5x")
+
+[node name="Inventory" type="Node2D" parent="."]
+script = ExtResource("3_v4nx1")
+
+[node name="Weapon" type="Sprite2D" parent="."]
+scale = Vector2(0.4, 0.4)
+texture = ExtResource("5_7o5bq")
+offset = Vector2(47, 15)
+script = ExtResource("2_2kufv")
+
+[node name="HitboxComponent" parent="." instance=ExtResource("4_tx1go")]
+collision_layer = 1
+collision_mask = 14
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HitboxComponent"]
+position = Vector2(0, 1.5)
+shape = SubResource("RectangleShape2D_oyr67")
+debug_color = Color(0, 0.639216, 0.388235, 0.419608)
