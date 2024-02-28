@@ -1,10 +1,14 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1709095477
+::res://::1709102164
 ::res://Assets/::1708494129
 ::res://Assets/Classes/::1703763490
 AttackClass.gd::GDScript::-1::1703763490::0::1::::AttackClass<>RefCounted<>::
-::res://Assets/Components/::1708494129
+::res://Assets/Components/::1709103438
 HitboxComponent.gd::GDScript::-1::1703762674::0::1::::<>Area2D<>::
+::res://Assets/Components/Enemy Movement/::1709102133
+EnemyMovementComponent.gd::GDScript::-1::1709102103::0::1::::<>Node2D<>::
+::res://Assets/Components/Health Component/::1709103438
+health_component.tscn::PackedScene::4964163990199479193::1709103443::0::1::::<><>::res://Assets/Prefabs/Enemy/HealthComponent.gd
 ::res://Assets/Components/hitbox/::1704266984
 HitboxComponent.gd::GDScript::-1::1704266984::0::1::::HitboxComponent<>Area2D<>::
 hitbox_component.tscn::PackedScene::8965601589996314419::1703766147::0::1::::<><>::res://Assets/Components/hitbox/HitboxComponent.gd
@@ -17,24 +21,29 @@ THIRDPARTY.md::TextFile::-1::1708494111::0::1::::<><>::
 ::res://Assets/godot-git-plugin-v3.1.0/addons/godot-git-plugin/linux/::1708494111
 ::res://Assets/godot-git-plugin-v3.1.0/addons/godot-git-plugin/macos/::1708494112
 ::res://Assets/godot-git-plugin-v3.1.0/addons/godot-git-plugin/win64/::1709095472
-::res://Assets/Levels/::1708829701
-TestLevel.tscn::PackedScene::8530958070279095523::1708829701::0::1::::<><>::uid://c6by1a6ybb28d::::res://Assets/Prefabs/Player/player.tscn<>uid://b17fovymvlj5s::::res://Assets/Sprites/Test/icon.svg<>uid://78hd55byo6ds::::res://Assets/Prefabs/Items/Pickup Test 2.0.tscn
-::res://Assets/Prefabs/::1703757699
-::res://Assets/Prefabs/Items/::1708829483
+::res://Assets/Levels/::1709103090
+TestLevel.tscn::PackedScene::8530958070279095523::1709099773::0::1::::<><>::uid://c6by1a6ybb28d::::res://Assets/Prefabs/Player/player.tscn<>uid://b17fovymvlj5s::::res://Assets/Sprites/Test/icon.svg<>uid://78hd55byo6ds::::res://Assets/Prefabs/Items/Pickup Test 2.0.tscn
+test_level_2d.tscn::PackedScene::6481047794243825328::1709103090::0::1::::<><>::
+::res://Assets/Prefabs/::1709102164
+::res://Assets/Prefabs/Enemy/::1709103416
+HealthComponent.gd::GDScript::-1::1709103416::0::1::::<>Node2D<>::
+TestEnemy.gd::GDScript::-1::1709102070::0::1::::<>CharacterBody2D<>::
+test_enemy.tscn::PackedScene::8948792539285815816::1709103461::0::1::::<><>::uid://b17fovymvlj5s::::res://Assets/Sprites/Test/icon.svg<>res://Assets/Prefabs/Enemy/TestEnemy.gd<>res://Assets/Components/Enemy Movement/EnemyMovementComponent.gd<>uid://ccyxb5lcu76c0::::res://Assets/Components/Health Component/health_component.tscn
+::res://Assets/Prefabs/Items/::1709099773
 ItemMetalPickup.gd::GDScript::-1::1708493602::0::1::::<>AnimatableBody2D<>::
-Pickup Test 2.0.tscn::PackedScene::2314599460754819332::1708829483::0::1::::<><>::uid://b34wbx7cawlk2::::res://Assets/Sprites/Test/301-3013157_coin-golden-goldcoin-s-dollar-pixel-pixels-1184105542.png<>res://Assets/Prefabs/Items/ItemMetalPickup.gd
+Pickup Test 2.0.tscn::PackedScene::2314599460754819332::1709099773::0::1::::<><>::uid://b34wbx7cawlk2::::res://Assets/Sprites/Test/301-3013157_coin-golden-goldcoin-s-dollar-pixel-pixels-1184105542.png<>res://Assets/Prefabs/Items/ItemMetalPickup.gd
 pickup_test.tscn::PackedScene::261246965481751407::1704267331::0::1::::<><>::uid://b34wbx7cawlk2::::res://Assets/Sprites/Test/301-3013157_coin-golden-goldcoin-s-dollar-pixel-pixels-1184105542.png<>res://Assets/Prefabs/Items/ItemMetalPickup.gd
-::res://Assets/Prefabs/Player/::1708829483
-CursorFollow.gd::GDScript::-1::1708829479::0::1::::<>Marker2D<>::
-player.tscn::PackedScene::6952263585367983273::1708829483::0::1::::<><>::res://Assets/Prefabs/Player/Player Scripts/player.gd<>uid://b17fovymvlj5s::::res://Assets/Sprites/Test/icon.svg<>res://Assets/Prefabs/Player/CursorFollow.gd<>res://Assets/Prefabs/Player/Player Scripts/PlayerInventory.gd<>uid://d00afbov5itmp::::res://Assets/Components/hitbox/hitbox_component.tscn<>res://Assets/Prefabs/Player/PlayerAttack.gd<>uid://bxo3c8ea5bk4p::::res://Assets/Prefabs/Player/Player Projectile/player_attack_projectile.tscn
+::res://Assets/Prefabs/Player/::1709099773
+CursorFollow.gd::GDScript::-1::1709096037::0::1::::<>Marker2D<>::
+player.tscn::PackedScene::6952263585367983273::1709099773::0::1::::<><>::res://Assets/Prefabs/Player/Player Scripts/player.gd<>uid://b17fovymvlj5s::::res://Assets/Sprites/Test/icon.svg<>res://Assets/Prefabs/Player/CursorFollow.gd<>res://Assets/Prefabs/Player/Player Scripts/PlayerInventory.gd<>uid://d00afbov5itmp::::res://Assets/Components/hitbox/hitbox_component.tscn<>res://Assets/Prefabs/Player/PlayerAttack.gd<>uid://bxo3c8ea5bk4p::::res://Assets/Prefabs/Player/Player Projectile/player_attack_projectile.tscn
 PlayerAttack.gd::GDScript::-1::1708829046::0::1::::<>Sprite2D<>::
-::res://Assets/Prefabs/Player/Player Projectile/::1708829483
-player_attack_projectile.gd::GDScript::-1::1708829014::0::1::::Player_Attack_Projectile<>Area2D<>::
-player_attack_projectile.tscn::PackedScene::4031370762799867897::1708829483::0::1::::<><>::uid://06hoasf40lee::::res://Assets/Sprites/Test/pixil-frame-0.png<>res://Assets/Prefabs/Player/Player Projectile/player_attack_projectile.gd
+::res://Assets/Prefabs/Player/Player Projectile/::1709099773
+player_attack_projectile.gd::GDScript::-1::1709095777::0::1::::Player_Attack_Projectile<>Area2D<>::
+player_attack_projectile.tscn::PackedScene::4031370762799867897::1709099773::0::1::::<><>::uid://06hoasf40lee::::res://Assets/Sprites/Test/pixil-frame-0.png<>res://Assets/Prefabs/Player/Player Projectile/player_attack_projectile.gd
 ::res://Assets/Prefabs/Player/Player Scripts/::1708493463
 player.gd::GDScript::-1::1708493463::0::1::::<>CharacterBody2D<>::
 PlayerInventory.gd::GDScript::-1::1708493225::0::1::::PlayerInventory<>Node2D<>::
-::res://Assets/Sprites/::1705392003
+::res://Assets/Sprites/::1709103014
 ::res://Assets/Sprites/Cursor/::1705392058
 ::res://Assets/Sprites/Cursor/kenney_crosshairPack/::1708494224
 Preview.png::CompressedTexture2D::2180196721626279815::1705392024::1705392078::1::::<><>::
@@ -1234,3 +1243,4 @@ crosshairs_vector.svg::CompressedTexture2D::7512211524386651158::1705392024::170
 icon.svg::CompressedTexture2D::4277720433129747674::1702211607::1703757708::1::::<><>::
 pixil-frame-0.png::CompressedTexture2D::1819166849464102256::1707908923::1708311806::1::::<><>::
 shotgun.png::CompressedTexture2D::654129125926691286::1706683856::1706692585::1::::<><>::
+::res://Assets/Sprites/TileMap/::1709103014

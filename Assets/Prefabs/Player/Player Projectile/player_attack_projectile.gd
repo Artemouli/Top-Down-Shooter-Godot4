@@ -3,7 +3,7 @@ extends Area2D
 class_name Player_Attack_Projectile
 
 
-var speed: float = 2000
+var speed: float = 3000
 
 #starts the despawn timer
 func _ready() -> void:

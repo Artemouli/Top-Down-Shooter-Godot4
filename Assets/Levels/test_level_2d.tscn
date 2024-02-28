@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://cylp57jtu288s"]
+
+[sub_resource type="TileSet" id="TileSet_mv4wm"]
+
+[node name="Test Level 2D" type="Node2D"]
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource("TileSet_mv4wm")
+format = 2

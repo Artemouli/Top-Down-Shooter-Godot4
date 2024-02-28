@@ -1,0 +1,27 @@
+[gd_scene load_steps=6 format=3 uid="uid://d0q4knmywktw7"]
+
+[ext_resource type="Texture2D" uid="uid://b17fovymvlj5s" path="res://Assets/Sprites/Test/icon.svg" id="1_88wkg"]
+[ext_resource type="Script" path="res://Assets/Prefabs/Enemy/TestEnemy.gd" id="1_pu1u4"]
+[ext_resource type="Script" path="res://Assets/Components/Enemy Movement/EnemyMovementComponent.gd" id="3_0wy6s"]
+[ext_resource type="PackedScene" uid="uid://ccyxb5lcu76c0" path="res://Assets/Components/Health Component/health_component.tscn" id="4_d04k5"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_rgdxj"]
+size = Vector2(127, 127)
+
+[node name="Test Enemy" type="CharacterBody2D"]
+collision_layer = 2
+motion_mode = 1
+script = ExtResource("1_pu1u4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, -0.5)
+shape = SubResource("RectangleShape2D_rgdxj")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(1, 0, 0, 1)
+texture = ExtResource("1_88wkg")
+
+[node name="EnemyMovementComponent" type="Node2D" parent="."]
+script = ExtResource("3_0wy6s")
+
+[node name="Health Component" parent="." instance=ExtResource("4_d04k5")]

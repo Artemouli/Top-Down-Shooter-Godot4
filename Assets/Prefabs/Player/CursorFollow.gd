@@ -8,12 +8,12 @@ func _physics_process(_delta: float) -> void:
 	#$Weapon.rotate(get_angle_to(get_viewport().get_mouse_position()))
 	#when mouse is on the left side of the player
 	if get_local_mouse_position().x < 0:
-		$Weapon.position.x = -85
+		$Weapon.position.x = -55
 		#IMPORTANT: Set this scale to correctly flip the weapon when facing left
 		#the y should be negative for it to be flipped vertically
 		$Weapon.scale = Vector2(0.4, -0.4)
 	else:
-		$Weapon.position.x = 85
+		$Weapon.position.x = 55
 		#the y should be positive for it to be unflipped
 		$Weapon.scale = Vector2(0.4, 0.4)
 
