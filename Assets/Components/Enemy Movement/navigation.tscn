@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://catcilavyf0yj"]
+
+[node name="Navigation" type="Node2D"]
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.1
+autostart = true

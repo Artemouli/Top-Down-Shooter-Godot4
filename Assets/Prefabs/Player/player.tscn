@@ -9,7 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://bxo3c8ea5bk4p" path="res://Assets/Prefabs/Player/Player Projectile/player_attack_projectile.tscn" id="6_rpl0k"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_v42sk"]
-size = Vector2(42, 63)
+size = Vector2(124, 129)
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_iu87q"]
 load_path = "res://.godot/imported/shotgun.png-4df3ac7a1164a8cad359d38d0387a50b.ctex"
@@ -17,13 +17,13 @@ load_path = "res://.godot/imported/shotgun.png-4df3ac7a1164a8cad359d38d0387a50b.
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_oyr67"]
 size = Vector2(100, 97)
 
-[node name="Player" type="CharacterBody2D"]
-collision_mask = 2
+[node name="Player" type="CharacterBody2D" groups=["Player"]]
+collision_mask = 18
 motion_mode = 1
 script = ExtResource("1_hhgbj")
 
 [node name="Player Collision" type="CollisionShape2D" parent="."]
-position = Vector2(1, -3.5)
+position = Vector2(0, -2.5)
 shape = SubResource("RectangleShape2D_v42sk")
 
 [node name="test player" type="Sprite2D" parent="."]

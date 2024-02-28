@@ -1,4 +1,10 @@
 extends CharacterBody2D
 
-func _physics_process(delta):
-	move_and_slide()
+@onready var player = get_tree().get_nodes_in_group("Player")[0]
+
+func _ready():
+	pass 
+
+func _physics_process(_delta: float) -> void:
+	#print(player.global_position)
+	pass
