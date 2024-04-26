@@ -5,17 +5,19 @@
 [ext_resource type="PackedScene" uid="uid://ccyxb5lcu76c0" path="res://Assets/Components/Health Component/health_component.tscn" id="4_d04k5"]
 [ext_resource type="PackedScene" uid="uid://catcilavyf0yj" path="res://Assets/Components/Enemy Movement/navigation.tscn" id="4_wa474"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_rgdxj"]
-size = Vector2(127, 127)
+[sub_resource type="CircleShape2D" id="CircleShape2D_h46sx"]
+radius = 57.8122
 
 [node name="Test Enemy" type="CharacterBody2D" groups=["Enemy"]]
 collision_layer = 2
+collision_mask = 19
 motion_mode = 1
+wall_min_slide_angle = 0.0
 script = ExtResource("1_pu1u4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-0.5, -0.5)
-shape = SubResource("RectangleShape2D_rgdxj")
+position = Vector2(-0.5, 0)
+shape = SubResource("CircleShape2D_h46sx")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 modulate = Color(1, 0, 0, 1)
@@ -24,3 +26,15 @@ texture = ExtResource("1_88wkg")
 [node name="Health Component" parent="." instance=ExtResource("4_d04k5")]
 
 [node name="Navigation" parent="." instance=ExtResource("4_wa474")]
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+path_postprocessing = 1
+avoidance_enabled = true
+debug_enabled = true
+debug_path_custom_color = Color(0.815686, 0, 0, 1)
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.2
+autostart = true
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

@@ -1,8 +1,15 @@
-[gd_scene load_steps=6 format=3 uid="uid://cylp57jtu288s"]
+[gd_scene load_steps=7 format=3 uid="uid://cylp57jtu288s"]
 
 [ext_resource type="Texture2D" uid="uid://jv4qwnrufhtj" path="res://Assets/Sprites/TileMap/Roguelike Dungeon Pack/Spritesheet/roguelikeDungeon_transparent.png" id="1_wmj2v"]
 [ext_resource type="PackedScene" uid="uid://c6by1a6ybb28d" path="res://Assets/Prefabs/Player/player.tscn" id="2_uv0gx"]
 [ext_resource type="PackedScene" uid="uid://d0q4knmywktw7" path="res://Assets/Prefabs/Enemy/test_enemy.tscn" id="3_46p8a"]
+
+[sub_resource type="NavigationPolygon" id="NavigationPolygon_ro6xr"]
+vertices = PackedVector2Array(8, 8, -8, 8, -8, -8, 8, -8)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)])
+source_geometry_group_name = &"navigation_polygon_source_group"
+agent_radius = 0.0
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_h0xnq"]
 resource_name = "Test tile set"
@@ -650,6 +657,7 @@ separation = Vector2i(1, 1)
 9:7/0 = 0
 9:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 9:7/0/physics_layer_0/angular_velocity = 0.0
+9:7/0/navigation_layer_0/polygon = SubResource("NavigationPolygon_ro6xr")
 10:7/0 = 0
 10:7/0/physics_layer_0/linear_velocity = Vector2(0, 0)
 10:7/0/physics_layer_0/angular_velocity = 0.0

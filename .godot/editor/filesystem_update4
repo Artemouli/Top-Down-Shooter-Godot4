@@ -1,8 +1,9 @@
-res://Assets/Levels/test_level_2d.tscn
 res://Assets/Levels/TestLevel.tscn
 res://Assets/Prefabs/Player/player.tscn
 res://Assets/Prefabs/Items/Pickup Test 2.0.tscn
 res://Assets/Prefabs/Player/Player Projectile/player_attack_projectile.tscn
 res://Assets/Prefabs/Enemy/test_enemy.tscn
-res://Assets/Prefabs/Enemy/TestEnemy.gd
+res://Assets/Levels/test_level_2d.tscn
 res://Assets/Components/Enemy Movement/navigation.tscn
+res://Assets/Components/Health Component/HealthComponent.gd
+res://Assets/Prefabs/Enemy/TestEnemy.gd
