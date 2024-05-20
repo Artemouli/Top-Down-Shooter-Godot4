@@ -1,14 +1,14 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1714115780
+::res://::1716205919
 ::res://Assets/::1708490529
 ::res://Assets/Classes/::1703759890
 AttackClass.gd::GDScript::-1::1703759890::0::1::::AttackClass<>RefCounted<>::
 ::res://Assets/Components/::1709099838
 HitboxComponent.gd::GDScript::-1::1703759074::0::1::::<>Area2D<>::
-::res://Assets/Components/Enemy Movement/::1709110189
-navigation.tscn::PackedScene::4812200843793403749::1709110189::0::1::::<><>::
-::res://Assets/Components/Health Component/::1709099861
-HealthComponent.gd::GDScript::-1::1709099816::0::1::::<>Node2D<>::
+::res://Assets/Components/Enemy Movement/::1714307809
+navigation.tscn::PackedScene::4812200843793403749::1714307809::0::1::::<><>::
+::res://Assets/Components/Health Component/::1714305894
+HealthComponent.gd::GDScript::-1::1714305894::0::1::::<>Node2D<>::
 health_component.tscn::PackedScene::4964163990199479193::1709099861::0::1::::<><>::res://Assets/Components/Health Component/HealthComponent.gd
 ::res://Assets/Components/hitbox/::1704263384
 HitboxComponent.gd::GDScript::-1::1704263384::0::1::::HitboxComponent<>Area2D<>::
@@ -21,25 +21,25 @@ plugin.cfg::TextFile::-1::1708490511::0::1::::<><>::
 THIRDPARTY.md::TextFile::-1::1708490511::0::1::::<><>::
 ::res://Assets/godot-git-plugin-v3.1.0/addons/godot-git-plugin/linux/::1708490511
 ::res://Assets/godot-git-plugin-v3.1.0/addons/godot-git-plugin/macos/::1708490512
-::res://Assets/godot-git-plugin-v3.1.0/addons/godot-git-plugin/win64/::1714115776
-::res://Assets/Levels/::1709110223
-TestLevel.tscn::PackedScene::8530958070279095523::1709110185::0::1::::<><>::uid://c6by1a6ybb28d::::res://Assets/Prefabs/Player/player.tscn<>uid://b17fovymvlj5s::::res://Assets/Sprites/Test/icon.svg<>uid://78hd55byo6ds::::res://Assets/Prefabs/Items/Pickup Test 2.0.tscn
-test_level_2d.tscn::PackedScene::6481047794243825328::1709110223::0::1::::<><>::uid://jv4qwnrufhtj::::res://Assets/Sprites/TileMap/Roguelike Dungeon Pack/Spritesheet/roguelikeDungeon_transparent.png<>uid://c6by1a6ybb28d::::res://Assets/Prefabs/Player/player.tscn<>uid://d0q4knmywktw7::::res://Assets/Prefabs/Enemy/test_enemy.tscn
+::res://Assets/godot-git-plugin-v3.1.0/addons/godot-git-plugin/win64/::1716205912
+::res://Assets/Levels/::1714307817
+TestLevel.tscn::PackedScene::8530958070279095523::1714307809::0::1::::<><>::uid://c6by1a6ybb28d::::res://Assets/Prefabs/Player/player.tscn<>uid://b17fovymvlj5s::::res://Assets/Sprites/Test/icon.svg<>uid://78hd55byo6ds::::res://Assets/Prefabs/Items/Pickup Test 2.0.tscn
+test_level_2d.tscn::PackedScene::6481047794243825328::1714307817::0::1::::<><>::uid://jv4qwnrufhtj::::res://Assets/Sprites/TileMap/Roguelike Dungeon Pack/Spritesheet/roguelikeDungeon_transparent.png<>uid://c6by1a6ybb28d::::res://Assets/Prefabs/Player/player.tscn<>uid://d0q4knmywktw7::::res://Assets/Prefabs/Enemy/test_enemy.tscn
 ::res://Assets/Prefabs/::1709098564
-::res://Assets/Prefabs/Enemy/::1709110223
-TestEnemy.gd::GDScript::-1::1709110223::0::1::::<>CharacterBody2D<>::
-test_enemy.tscn::PackedScene::8948792539285815816::1709110185::0::1::::<><>::uid://b17fovymvlj5s::::res://Assets/Sprites/Test/icon.svg<>res://Assets/Prefabs/Enemy/TestEnemy.gd<>uid://ccyxb5lcu76c0::::res://Assets/Components/Health Component/health_component.tscn<>uid://catcilavyf0yj::::res://Assets/Components/Enemy Movement/navigation.tscn
-::res://Assets/Prefabs/Items/::1709110185
+::res://Assets/Prefabs/Enemy/::1714307809
+TestEnemy.gd::GDScript::-1::1714307792::0::1::::<>CharacterBody2D<>::
+test_enemy.tscn::PackedScene::8948792539285815816::1714307809::0::1::::<><>::uid://b17fovymvlj5s::::res://Assets/Sprites/Test/icon.svg<>res://Assets/Prefabs/Enemy/TestEnemy.gd<>uid://ccyxb5lcu76c0::::res://Assets/Components/Health Component/health_component.tscn<>uid://catcilavyf0yj::::res://Assets/Components/Enemy Movement/navigation.tscn
+::res://Assets/Prefabs/Items/::1714307809
 ItemMetalPickup.gd::GDScript::-1::1708490002::0::1::::<>AnimatableBody2D<>::
-Pickup Test 2.0.tscn::PackedScene::2314599460754819332::1709110185::0::1::::<><>::uid://b34wbx7cawlk2::::res://Assets/Sprites/Test/301-3013157_coin-golden-goldcoin-s-dollar-pixel-pixels-1184105542.png<>res://Assets/Prefabs/Items/ItemMetalPickup.gd
+Pickup Test 2.0.tscn::PackedScene::2314599460754819332::1714307809::0::1::::<><>::uid://b34wbx7cawlk2::::res://Assets/Sprites/Test/301-3013157_coin-golden-goldcoin-s-dollar-pixel-pixels-1184105542.png<>res://Assets/Prefabs/Items/ItemMetalPickup.gd
 pickup_test.tscn::PackedScene::261246965481751407::1704263731::0::1::::<><>::uid://b34wbx7cawlk2::::res://Assets/Sprites/Test/301-3013157_coin-golden-goldcoin-s-dollar-pixel-pixels-1184105542.png<>res://Assets/Prefabs/Items/ItemMetalPickup.gd
-::res://Assets/Prefabs/Player/::1709110185
+::res://Assets/Prefabs/Player/::1714307809
 CursorFollow.gd::GDScript::-1::1709092437::0::1::::<>Marker2D<>::
-player.tscn::PackedScene::6952263585367983273::1709110185::0::1::::<><>::res://Assets/Prefabs/Player/Player Scripts/player.gd<>uid://b17fovymvlj5s::::res://Assets/Sprites/Test/icon.svg<>res://Assets/Prefabs/Player/CursorFollow.gd<>res://Assets/Prefabs/Player/Player Scripts/PlayerInventory.gd<>uid://d00afbov5itmp::::res://Assets/Components/hitbox/hitbox_component.tscn<>res://Assets/Prefabs/Player/PlayerAttack.gd<>uid://bxo3c8ea5bk4p::::res://Assets/Prefabs/Player/Player Projectile/player_attack_projectile.tscn
-PlayerAttack.gd::GDScript::-1::1708825446::0::1::::<>Sprite2D<>::
-::res://Assets/Prefabs/Player/Player Projectile/::1709110185
-player_attack_projectile.gd::GDScript::-1::1709092177::0::1::::Player_Attack_Projectile<>Area2D<>::
-player_attack_projectile.tscn::PackedScene::4031370762799867897::1709110185::0::1::::<><>::uid://06hoasf40lee::::res://Assets/Sprites/Test/pixil-frame-0.png<>res://Assets/Prefabs/Player/Player Projectile/player_attack_projectile.gd
+player.tscn::PackedScene::6952263585367983273::1714307809::0::1::::<><>::res://Assets/Prefabs/Player/Player Scripts/player.gd<>uid://b17fovymvlj5s::::res://Assets/Sprites/Test/icon.svg<>res://Assets/Prefabs/Player/CursorFollow.gd<>res://Assets/Prefabs/Player/Player Scripts/PlayerInventory.gd<>uid://d00afbov5itmp::::res://Assets/Components/hitbox/hitbox_component.tscn<>res://Assets/Prefabs/Player/PlayerAttack.gd<>uid://bxo3c8ea5bk4p::::res://Assets/Prefabs/Player/Player Projectile/player_attack_projectile.tscn
+PlayerAttack.gd::GDScript::-1::1714306991::0::1::::<>Sprite2D<>::
+::res://Assets/Prefabs/Player/Player Projectile/::1714307809
+player_attack_projectile.gd::GDScript::-1::1714304441::0::1::::Player_Attack_Projectile<>Area2D<>::
+player_attack_projectile.tscn::PackedScene::4031370762799867897::1714307809::0::1::::<><>::uid://06hoasf40lee::::res://Assets/Sprites/Test/pixil-frame-0.png<>res://Assets/Prefabs/Player/Player Projectile/player_attack_projectile.gd
 ::res://Assets/Prefabs/Player/Player Scripts/::1708489863
 player.gd::GDScript::-1::1708489863::0::1::::<>CharacterBody2D<>::
 PlayerInventory.gd::GDScript::-1::1708489625::0::1::::PlayerInventory<>Node2D<>::

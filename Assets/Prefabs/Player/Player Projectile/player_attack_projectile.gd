@@ -4,6 +4,7 @@ class_name Player_Attack_Projectile
 
 
 var speed: float = 3000
+var damage: int = 1
 
 #starts the despawn timer
 func _ready() -> void:
@@ -14,4 +15,8 @@ func _physics_process(_delta: float) -> void:
 
 #despawns the bullet projectile once the timer ends
 func _on_despawn_timer_timeout() -> void:
+	queue_free()
+
+
+func _on_body_entered(body):
 	queue_free()

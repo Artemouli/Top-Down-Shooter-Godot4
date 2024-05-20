@@ -1616,10 +1616,6 @@ layer_3/tile_data = PackedInt32Array(-196607, 196608, 1, -262143, 196608, 0, 393
 [node name="Player" parent="." instance=ExtResource("2_uv0gx")]
 position = Vector2(112, -64)
 
-[node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(-32, -67)
-zoom = Vector2(0.5, 0.5)
-
 [node name="Test Enemy" parent="." instance=ExtResource("3_46p8a")]
 position = Vector2(840, 308)
 collision_mask = 17
